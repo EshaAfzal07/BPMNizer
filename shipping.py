@@ -29,7 +29,8 @@ def main(destination, weight):
     shipping_cost = calculate_shipping_cost(destination, weight)
     shipping_data = {"destination": destination, "weight": weight}
     shipping_id = save_shipping_details(destination, weight, shipping_cost, shipping_data)
-    print(f"Shipping details saved. ID: {shipping_id}")
+     print('Shipping cost to {destination} for {weight} kg package: {shipping_cost}')
+    print("Shipping details saved. ID: {shipping_id}")
 
 if __name__ == '__main__':
     destination = "New York"
